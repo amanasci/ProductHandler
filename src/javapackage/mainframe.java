@@ -25,7 +25,7 @@ public final class mainframe extends javax.swing.JFrame {
     private int pos;
 
     /**
-     * Creates new form mainframe
+     * Created by Zishan Ahmad
      */
     public mainframe() {
         initComponents();
@@ -38,7 +38,7 @@ public final class mainframe extends javax.swing.JFrame {
                   
        
         try {
-            con=(Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/product","root","aman");
+            con=(Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/product","root","password");
        return con;
         } catch (SQLException ex) {
             Logger.getLogger(mainframe.class.getName()).log(Level.SEVERE, null, ex);
